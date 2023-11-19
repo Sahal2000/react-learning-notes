@@ -1,0 +1,9 @@
+.stateButton{
+    height: 80px;
+    width: 80px;
+    font-size: 15px;
+    margin: 10px;
+    color: white;
+    background-color: green;
+    border-radius: 5px;
+}
