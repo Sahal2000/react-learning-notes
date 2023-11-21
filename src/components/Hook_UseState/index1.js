@@ -1,26 +1,26 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
 export default class Hook_UseState1 extends Component {
-    constructor(props) {
-      super(props)
-    
-      this.state = {
-         count : 0
-      }
-    }
+  constructor(props) {
+    super(props);
 
-    handleIncrement = () => {
-        this.setState ({
-            count : this.state.count + 1
-        })
-    }
+    this.state = {
+      count: 0,
+    };
+  }
+
+  handleIncrement = () => {
+    this.setState({
+      count: this.state.count + 1,
+    });
+  };
   render() {
-    const {count} = this.state
+    const { count } = this.state;
     return (
       <div>
-        <h1>Count  : {count}</h1>
+        <h1>Count : {count}</h1>
         <button onClick={this.handleIncrement}>Increment</button>
       </div>
-    )
+    );
   }
 }

@@ -11,6 +11,8 @@ import Hook_UseState2 from './components/Hook_UseState/index2'
 import EventBubbling from "./components/EventBubbling";
 import Form from './components/Form/Form'
 import SampleClass from "./SampleClass";
+import ClassComponentOne from "./ClassComponentOne";
+import ClassState from "./ClassState";
 
 function App() {
   const [count, setCount] = useState(0)
@@ -37,8 +39,10 @@ function App() {
       {/* <h1>Count : {count}</h1>
       <button onClick={handleIncrement}>+</button> */}
       {/* <EventBubbling/> */}
-      <Form/>
-      <SampleClass param = "Passing parameter to class component"/>
+      {/* <Form/> */}
+      {/* <SampleClass param = "Passing parameter to class component"/> */}
+      {/* <ClassComponentOne/> */}
+      <ClassState/>
     </div>
   );
 }
