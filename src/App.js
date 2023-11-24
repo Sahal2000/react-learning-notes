@@ -13,6 +13,7 @@ import Form from './components/Form/Form'
 import SampleClass from "./SampleClass";
 import ClassComponentOne from "./ClassComponentOne";
 import ClassState from "./ClassState";
+import ClassStatePractice from './ClassStatePractice'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -42,7 +43,8 @@ function App() {
       {/* <Form/> */}
       {/* <SampleClass param = "Passing parameter to class component"/> */}
       {/* <ClassComponentOne/> */}
-      <ClassState/>
+      {/* <ClassState/> */}
+      <ClassStatePractice/>
     </div>
   );
 }

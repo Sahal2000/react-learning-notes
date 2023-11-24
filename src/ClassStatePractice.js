@@ -1,21 +1,59 @@
-import React, { Component, useState } from 'react'
+import React, { Component } from 'react'
+
+// export default function ClassStatePractice() {
+//   const [count, setCount] = useState(0)
+//   function add() {
+//     setCount((count) =>{
+//       return count + 1
+//     })
+//   }
+//   function subtract() {
+//     setCount((count) =>{
+//       return count - 1
+//     })
+//   }
+//   return (
+//     <div>
+//       <h1>count: {count}</h1>
+//       <button onClick={add}>+</button>
+//       <button onClick={subtract}>-</button>
+//     </div>
+//   )
+// }
+
 
 export default class ClassStatePractice extends Component {
+  state = {
+    count: 0
+  }
+
+  add = () => {
+    this.setState((prevState) => {
+      return {
+        count: prevState.count + 1
+      }
+    })
+  }
+  subtract = () => {
+    this.setState((prevState) => {
+      return {
+        count: prevState.count - 1
+      }
+    })
+  }
+
+
   render() {
-    const [count, setCount] = useState(0)
 
-    function add() {
-        se
-    }
-
+   
+    
     return (
       <div>
-        <button onClick={subtract}>-</button>
-        <div>
-            <h1>{count}</h1>
-        </div>
-        <button onClick={add}>+</button>
+        <h1>Count: {this.state.count}</h1>
+        <button onClick={this.add}>+</button>
+        <button onClick={this.subtract}>-</button>
       </div>
     )
   }
 }
+

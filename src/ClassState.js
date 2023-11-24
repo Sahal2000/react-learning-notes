@@ -1,17 +1,21 @@
 import React, { Component } from "react";
 
 export default class ClassState extends Component {
-  state = {
-    goOut: "Yes"
+  constructor() {
+    super();
+    this.state = {
+      goOut: "Yes",
+    };
+    this.toggleGoOut = this.toggleGoOut.bind(this)
   }
 
   toggleGoOut = () => {
-    this.setState(prevState => {
-      return  {
-        goOut: prevState.goOut === "YES" ? "No" : "Yes"
-      }
+    this.setState((prevState) => {
+      return {
+        goOut: prevState.goOut === "YES" ? "No" : "Yes",
+      };
     });
-  }
+  };
 
   render() {
     return (
