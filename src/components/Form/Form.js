@@ -3,25 +3,14 @@ import style from "./form.module.css";
 
 export default function Form() {
   const [user, setUser] = useState({ name: "", email: "", password: "" });
-  const [name, email, password] = user;
+  const {name, email, password} = user;
 
   const handleChange = (e) => {
-    console.log("handle change");
+    setUser({...user, [e.target.name]: e.target.value});
+    console.log(user);
   };
 
   const handleSubmit = (e) => {
-    const filedName = e.target.name;
-    if(filedName === 'name') {
-      setUser({ name: e.target.value, email, password });
-    }
-    if(filedName === 'name') {
-      setUser({ name, email: e.target.value, password });
-    }
-    if(filedName === 'name') {
-      setUser({ name, email, password: e.target.value });
-    }
-    console.log("Submitted");
-
     console.log(user);
     e.preventDefault();
   };

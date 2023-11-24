@@ -14,14 +14,31 @@ import SampleClass from "./SampleClass";
 import ClassComponentOne from "./ClassComponentOne";
 import ClassState from "./ClassState";
 import ClassStatePractice from './ClassStatePractice'
+import Child from "./components/STATE_LIFTING/Child";
+import Todo from "./components/Todo";
+import NewTodo from "./components/NewTodo";
+import Home from "./components/STATE_LIFTING/Home";
+
 
 function App() {
+  const data = "I am parent app";
+
+  const handleChildData = (childData) => {
+    console.log("From child app : " + childData);
+  }
+
   const [count, setCount] = useState(0);
   const handleIncrement = () => {
     setCount((count) => count + 1);
     setCount((count) => count + 1);
     setCount((count) => count + 1);
   };
+
+
+  const handleNewTodo = (newTodo) => {
+    console.log(newTodo);
+  }
+
   return (
     <div>
       {/* <h1>Hello</h1>
@@ -40,11 +57,15 @@ function App() {
       {/* <h1>Count : {count}</h1>
       <button onClick={handleIncrement}>+</button> */}
       {/* <EventBubbling/> */}
-      <Form/>
+      {/* <Form/> */}
       {/* <SampleClass param = "Passing parameter to class component"/> */}
       {/* <ClassComponentOne/> */}
       {/* <ClassState/> */}
-      <ClassStatePractice/>
+      {/* <ClassStatePractice/> */}
+      {/* <Child data = {data} onChildData={handleChildData}/> */}
+      {/* <Todo title = "learn react.js"/>
+      <NewTodo onHnadleNewTodo={handleNewTodo}/> */}
+      <Home/>
     </div>
   );
 }
