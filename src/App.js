@@ -10,16 +10,17 @@ import Hook_UseState1 from "./components/Hook_UseState/index1";
 import Hook_UseState2 from "./components/Hook_UseState/index2";
 import EventBubbling from "./components/EventBubbling";
 import Form from "./components/Form/Form";
-import SampleClass from "./SampleClass";
-import ClassComponentOne from "./ClassComponentOne";
-import ClassState from "./ClassState";
-import ClassStatePractice from './ClassStatePractice'
+import SampleClass from "./class_component_practice/SampleClass";
+import ClassComponentOne from "./class_component_practice/ClassComponentOne";
+import ClassState from "./class_component_practice/ClassState";
+import ClassStatePractice from './class_component_practice/ClassStatePractice'
 import Child from "./components/STATE_LIFTING/Child";
 import Todo from "./components/Todo";
 import NewTodo from "./components/NewTodo";
 import Home from "./components/STATE_LIFTING/Home";
-import ClassStateComplex from "./ClassStateComplex";
+import ClassStateComplex from "./class_component_practice/ClassStateComplex";
 import UseEffectExamplt from "./components/useEffect/UseEffectExamplt";
+import DataFetch from "./components/useEffect/DataFetch";
 
 
 function App() {
@@ -69,7 +70,8 @@ function App() {
       <NewTodo onHnadleNewTodo={handleNewTodo}/> */}
       {/* <Home/> */}
       {/* <ClassStateComplex/> */}
-      <UseEffectExamplt/>
+      {/* <UseEffectExamplt/> */}
+      <DataFetch/>
     </div>
   );
 }
