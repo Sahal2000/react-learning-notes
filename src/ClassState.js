@@ -8,7 +8,7 @@ export default class ClassState extends Component {
     };
     this.toggleGoOut = this.toggleGoOut.bind(this)
   }
-
+ 
   toggleGoOut = () => {
     this.setState((prevState) => {
       return {

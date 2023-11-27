@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, useState } from "react";
 
 // export default function ClassStatePractice() {
 //   const [count, setCount] = useState(0)
@@ -21,39 +21,39 @@ import React, { Component } from 'react'
 //   )
 // }
 
-
 export default class ClassStatePractice extends Component {
-  state = {
-    count: 0
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      count: 0,
+    };
+    this.add = this.add.bind(this);
+    this.subtract = this.subtract.bind(this);
   }
 
-  add = () => {
+  add() {
     this.setState((prevState) => {
       return {
-        count: prevState.count + 1
-      }
-    })
+        count: prevState.count + 1,
+      };
+    });
   }
-  subtract = () => {
+  subtract() {
     this.setState((prevState) => {
       return {
-        count: prevState.count - 1
-      }
-    })
+        count: prevState.count - 1,
+      };
+    });
   }
-
 
   render() {
-
-   
-    
     return (
       <div>
         <h1>Count: {this.state.count}</h1>
         <button onClick={this.add}>+</button>
         <button onClick={this.subtract}>-</button>
       </div>
-    )
+    );
   }
 }
-

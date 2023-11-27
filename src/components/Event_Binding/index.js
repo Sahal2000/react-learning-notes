@@ -7,6 +7,7 @@ export default class Event_Binding extends Component {
       this.state = {
          count : 0
       }
+      // Event binding here which doesn't need while using arrow function of ES6
       this.handleClick = this.handleClick.bind(this)
     }
     handleClick () {

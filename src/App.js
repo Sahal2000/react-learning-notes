@@ -18,6 +18,8 @@ import Child from "./components/STATE_LIFTING/Child";
 import Todo from "./components/Todo";
 import NewTodo from "./components/NewTodo";
 import Home from "./components/STATE_LIFTING/Home";
+import ClassStateComplex from "./ClassStateComplex";
+import UseEffectExamplt from "./components/useEffect/UseEffectExamplt";
 
 
 function App() {
@@ -65,7 +67,9 @@ function App() {
       {/* <Child data = {data} onChildData={handleChildData}/> */}
       {/* <Todo title = "learn react.js"/>
       <NewTodo onHnadleNewTodo={handleNewTodo}/> */}
-      <Home/>
+      {/* <Home/> */}
+      {/* <ClassStateComplex/> */}
+      <UseEffectExamplt/>
     </div>
   );
 }
