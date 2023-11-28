@@ -1,6 +1,10 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 const DataFetch = () => {
+
+  const [todos, setTodos] = useState(null)
+
+  
   return (
     <div>
         <h1>DataFetch</h1>
