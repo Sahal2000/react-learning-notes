@@ -21,6 +21,9 @@ import Home from "./components/STATE_LIFTING/Home";
 import ClassStateComplex from "./class_component_practice/ClassStateComplex";
 import UseEffectExamplt from "./components/useEffect/UseEffectExamplt";
 import DataFetch from "./components/useEffect/DataFetch";
+import ClassStateUpdate from "./class_component_practice/ClassStateUpdate";
+import ComponentDidMount from "./class_component_practice/ComponentDidMount";
+import ComponentDidUpdate from "./class_component_practice/ComponentDidUpdate";
 
 
 function App() {
@@ -71,7 +74,10 @@ function App() {
       {/* <Home/> */}
       {/* <ClassStateComplex/> */}
       {/* <UseEffectExamplt/> */}
-      <DataFetch/>
+      {/* <DataFetch/> */}
+      {/* <ClassStateUpdate/> */}
+      {/* <ComponentDidMount/> */}
+      <ComponentDidUpdate/>
     </div>
   );
 }
