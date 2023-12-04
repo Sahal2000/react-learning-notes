@@ -24,7 +24,7 @@ import DataFetch from "./components/useEffect/DataFetch";
 import ClassStateUpdate from "./class_component_practice/ClassStateUpdate";
 import ComponentDidMount from "./class_component_practice/ComponentDidMount";
 import ComponentDidUpdate from "./class_component_practice/ComponentDidUpdate";
-
+import Signup from './form-validation/Signup'
 
 function App() {
   const data = "I am parent app";
@@ -77,7 +77,8 @@ function App() {
       {/* <DataFetch/> */}
       {/* <ClassStateUpdate/> */}
       {/* <ComponentDidMount/> */}
-      <ComponentDidUpdate/>
+      {/* <ComponentDidUpdate/> */}
+      <Signup/>
     </div>
   );
 }
