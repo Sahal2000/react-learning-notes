@@ -17,7 +17,7 @@ export default function Form() {
 
   return (
     <div>
-      <h1>Registration</h1>
+      <h1 className={style.formGroup}>Registration</h1>
       <form action="" onSubmit={handleSubmit}>
         <div className={style.formGroup}>
           <label htmlFor="name">Name:</label>
@@ -52,7 +52,7 @@ export default function Form() {
             required
           />
         </div>
-        <button>Register</button>
+        <button className={style.formGroup}>Register</button>
       </form>
     </div>
   );

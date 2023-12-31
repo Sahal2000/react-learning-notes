@@ -59,7 +59,7 @@ function App() {
       {/* <ClassComponentOne/> */}
       {/* <ClassState/> */}
       {/* <ClassStatePractice/> */}
-      {/* <Child data = {data} onChildData={handleChildData}/> */}
+      <Child data = {data} onChildData={handleChildData}/>
       {/* <Todo title = "learn react.js"/> */}
       {/* <NewTodo onHnadleNewTodo={handleNewTodo}/> */}
       {/* <Home/> */}
