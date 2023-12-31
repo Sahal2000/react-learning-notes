@@ -26,7 +26,7 @@ import ClassStateUpdate from "./components/ClassComponentPractice/ClassStateUpda
 import ComponentDidMount from "./components/ClassComponentPractice/ComponentDidMount";
 import ComponentDidUpdate from "./components/ClassComponentPractice/ComponentDidUpdate";
 import Signup from './components/FormValidation/Signup'
-import NestedMapping from "./components/NestedMapping";
+import NestedMapping from "./components/MappingData/NestedMapping";
 
 function App() {
   const data = "I am parent app";
@@ -35,22 +35,13 @@ function App() {
     console.log("From child app : " + childData);
   }
 
-  const [count, setCount] = useState(0);
-  const handleIncrement = () => {
-    setCount((count) => count + 1);
-    setCount((count) => count + 1);
-    setCount((count) => count + 1);
-  };
-
-
   const handleNewTodo = (newTodo) => {
     console.log(newTodo);
   }
 
   return (
     <div>
-      {/* <h1>Hello</h1>
-      <span className="iconfacebook">
+      {/* <span className="iconfacebook">
         <FaFacebook/>
       </span>
       <span className="iconyoutube">
@@ -62,8 +53,6 @@ function App() {
       {/* <Event_Handler_Class/> */}
       {/* <Event_Binding/> */}
       {/* <Hook_UseState2/> */}
-      {/* <h1>Count : {count}</h1>
-      <button onClick={handleIncrement}>+</button> */}
       {/* <EventBubbling/> */}
       {/* <Form/> */}
       {/* <SampleClass param = "Passing parameter to class component"/> */}
@@ -71,8 +60,8 @@ function App() {
       {/* <ClassState/> */}
       {/* <ClassStatePractice/> */}
       {/* <Child data = {data} onChildData={handleChildData}/> */}
-      {/* <Todo title = "learn react.js"/>
-      <NewTodo onHnadleNewTodo={handleNewTodo}/> */}
+      {/* <Todo title = "learn react.js"/> */}
+      {/* <NewTodo onHnadleNewTodo={handleNewTodo}/> */}
       {/* <Home/> */}
       {/* <ClassStateComplex/> */}
       {/* <UseEffectExamplt/> */}
