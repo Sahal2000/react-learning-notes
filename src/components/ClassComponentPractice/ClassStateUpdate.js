@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import image from "../abc.jpg"
-import image2 from "../star-icon-vector.jpg"
+import image from "../../resources/abc.jpg"
+import image2 from "../../resources/star-icon-vector.jpg"
 
 export default class ClassStateUpdate extends Component {
   constructor(props) {

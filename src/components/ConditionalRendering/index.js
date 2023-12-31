@@ -23,9 +23,9 @@ constructor(props) {
     // }
     return(
         <duv>
-            {/* {element} */}
+            {element}
             {/* using short circuit */}
-            {isLoggedIn && <HomePage/>}
+            {/* {isLoggedIn && <HomePage/>} */}
         </duv>
     )
   }

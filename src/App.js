@@ -1,30 +1,32 @@
 import React, { useCallback, useState } from "react";
 import { FaFacebook, FaYoutube } from "react-icons/fa";
-import ReactBootstrap from "./components/React_Bootstrap/ReactBootstrap";
-import Card from "./components/Card";
+import ReactBootstrap from "./components/ReactBootstrap/ReactBootstrap";
+import Conditional_Rendering from './components/ConditionalRendering/index'
+import Card1 from "./components/Destructuring/Card1";
+import Card2 from "./components/Destructuring/Card2";
 import State from "./components/State/State";
-import Conditional_Rendering from "./components/conditional_rendering";
-import Event_Handler_Class from "./components/Event_Handler_Class";
-import Event_Binding from "./components/Event_Binding/index";
-import Hook_UseState1 from "./components/Hook_UseState/index1";
-import Hook_UseState2 from "./components/Hook_UseState/index2";
-import EventBubbling from "./components/EventBubbling";
+import Event_Handler_Class from "./components/EventHandlerClass";
+import Event_Binding from "./components/EventBinding/index";
+import Hook_UseState1 from "./components/HookUseState/index1";
+import Hook_UseState2 from "./components/HookUseState/index2";
+import EventBubbling from "./components/EventBubbling/EventBubbling";
 import Form from "./components/Form/Form";
-import SampleClass from "./class_component_practice/SampleClass";
-import ClassComponentOne from "./class_component_practice/ClassComponentOne";
-import ClassState from "./class_component_practice/ClassState";
-import ClassStatePractice from './class_component_practice/ClassStatePractice'
-import Child from "./components/STATE_LIFTING/Child";
+import SampleClass from "./components/ClassComponentPractice/SampleClass";
+import ClassComponentOne from "./components/ClassComponentPractice/ClassComponentOne";
+import ClassState from "./components/ClassComponentPractice/ClassState";
+import ClassStatePractice from './components/ClassComponentPractice/ClassStatePractice'
+import Child from "./components/StateLifting/Child";
 import Todo from "./components/Todo";
 import NewTodo from "./components/NewTodo";
-import Home from "./components/STATE_LIFTING/Home";
-import ClassStateComplex from "./class_component_practice/ClassStateComplex";
-import UseEffectExamplt from "./components/useEffect/UseEffectExamplt";
-import DataFetch from "./components/useEffect/DataFetch";
-import ClassStateUpdate from "./class_component_practice/ClassStateUpdate";
-import ComponentDidMount from "./class_component_practice/ComponentDidMount";
-import ComponentDidUpdate from "./class_component_practice/ComponentDidUpdate";
-import Signup from './form-validation/Signup'
+import Home from "./components/StateLifting/Home";
+import ClassStateComplex from "./components/ClassComponentPractice/ClassStateComplex";
+import UseEffectExamplt from "./components/UseEffect/UseEffectExample";
+import DataFetch from "./components/UseEffect/DataFetch";
+import ClassStateUpdate from "./components/ClassComponentPractice/ClassStateUpdate";
+import ComponentDidMount from "./components/ClassComponentPractice/ComponentDidMount";
+import ComponentDidUpdate from "./components/ClassComponentPractice/ComponentDidUpdate";
+import Signup from './components/FormValidation/Signup'
+import NestedMapping from "./components/NestedMapping";
 
 function App() {
   const data = "I am parent app";
@@ -78,7 +80,10 @@ function App() {
       {/* <ClassStateUpdate/> */}
       {/* <ComponentDidMount/> */}
       {/* <ComponentDidUpdate/> */}
-      <Signup/>
+      {/* <Signup/> */}
+      {/* <NestedMapping/> */}
+      {/* <Card1 title="Titl1" desc="Desc1"/>
+      <Card2  title="Titl2" desc="Desc2"/> */}
     </div>
   );
 }
