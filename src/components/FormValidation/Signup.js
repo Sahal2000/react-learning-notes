@@ -31,17 +31,17 @@ const Signup = () => {
             <div>
                 <label htmlFor="name">Name: </label>
                 <input type='text' id='name' name='name' onChange={formik.handleChange} value={formik.values.name}/>
-                {formik.errors.name && <span>{formik.errors.name}</span>}
+                {formik.touched.name && formik.errors.name && <span>{formik.errors.name}</span>}
             </div>
             <div>
                 <label htmlFor="email">Email: </label>
                 <input type='text' id='email' name='email' onChange={formik.handleChange} value={formik.values.email}/>
-                {formik.errors.email && <span>{formik.errors.email}</span>}
+                {formik.touched.email && formik.errors.email && <span>{formik.errors.email}</span>}
             </div>
             <div>
                 <label htmlFor="password">Password: </label>
                 <input type='text' id='password' name='password' onChange={formik.handleChange} value={formik.values.password}/>
-                {formik.errors.password && <span>{formik.errors.password}</span>}
+                {formik.touched.password && formik.errors.password && <span>{formik.errors.password}</span>}
             </div>
             <button type="submit">signup</button>
         </form>
