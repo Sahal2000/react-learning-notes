@@ -62,7 +62,7 @@ function App() {
       {/* <Child data = {data} onChildData={handleChildData}/> */}
       {/* <Todo title = "learn react.js"/> */}
       {/* <NewTodo onHnadleNewTodo={handleNewTodo}/> */}
-      {/* <Home/> */}
+      <Home/>
       {/* <ClassStateComplex/> */}
       {/* <UseEffectExamplt/> */}
       {/* <DataFetch/> */}
