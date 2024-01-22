@@ -27,6 +27,7 @@ import ComponentDidMount from "./components/ClassComponentPractice/ComponentDidM
 import ComponentDidUpdate from "./components/ClassComponentPractice/ComponentDidUpdate";
 import Signup from './components/FormValidation/Signup'
 import NestedMapping from "./components/MappingData/NestedMapping";
+import ReduxReact from "./components/Redux/ReduxReactApp/ReduxReact";
 
 function App() {
   const data = "I am parent app";
@@ -62,17 +63,18 @@ function App() {
       {/* <Child data = {data} onChildData={handleChildData}/> */}
       {/* <Todo title = "learn react.js"/> */}
       {/* <NewTodo onHnadleNewTodo={handleNewTodo}/> */}
-      <Home/>
+      {/* <Home/> */}
       {/* <ClassStateComplex/> */}
       {/* <UseEffectExamplt/> */}
       {/* <DataFetch/> */}
       {/* <ClassStateUpdate/> */}
       {/* <ComponentDidMount/> */}
       {/* <ComponentDidUpdate/> */}
-      <Signup/>
+      {/* <Signup/> */}
       {/* <NestedMapping/> */}
       {/* <Card1 title="Titl1" desc="Desc1"/>
       <Card2  title="Titl2" desc="Desc2"/> */}
+      <ReduxReact/>
     </div>
   );
 }

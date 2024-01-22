@@ -6,6 +6,7 @@ const {createStore, applyMiddleware} = require("redux");
 const {thunk} = require("redux-thunk");
 
 const { default: axios } = require("axios");
+const { ErrorMessage } = require("formik");
 // constants
 const GET_TODOS_REQUEST = "GET_TODOS_REQUEST";
 const GET_TODOS_SUCCESS = "GET_TODOS_SUCCESS";
@@ -74,13 +75,17 @@ const fetchData = () => {
     axios
       .get(API_URL)
       .then((res) => {
-        console.log(res.data);
+        const todos = res.data;
+        const titles = todos.map(todo => todo.title);
+        dispatch(getTodosSuccess(titles));
       })
       .catch((error) => {
-        console.log(error.message);
+        const errorMessage = error.message;
+        dispatch(getTodosFailed(errorMessage));
       });
   };
 };
+
 
 // store
 const store = createStore(todosReducer, applyMiddleware(thunk));
